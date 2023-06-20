@@ -1,0 +1,97 @@
+.leaderboard {
+    width: 500px;
+	height: 400px;
+	margin: 100px auto 0;
+	background: #141d26;
+	padding: 25px 40px;
+	position: relative;
+	border-radius: 10px;
+    color: white;
+    font-family: Arial;
+    display: flex ;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px#000000;
+}
+
+.v-line{
+    background-color: #5b5d69;
+    border-radius: 10px;
+    height: 0.5px;
+}
+
+body{
+    background-color: #272B40;
+}
+
+.podio{
+    width: 100%;
+    background-color:#141d26;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow:  1px 1px 1px #000000;
+} 
+
+.nome{
+    color: aliceblue;
+    margin: 10px;
+    position: relative;
+    left: 30px;
+    font-weight: 800;
+}
+
+.nv1 {
+    position: relative;
+    right: 60px;
+    float: right;
+    color: #C69749;
+}
+
+.nv2 {
+    position: relative;
+    right: 60px;
+    float: right;
+    color: #9d9993;
+}
+
+.nv3 {
+    position: relative;
+    right: 60px;
+    float: right;
+    color: #8d5d41;
+}
+
+.nome > n1{
+    color: #C69749;
+}
+
+.nome > n2{
+    color: #9d9993;
+}
+
+.nome > n3{
+    color: #8d5d41;
+}
+
+.nome > v{
+    position: relative;
+    left: 50px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: 0px;
+    height: 25px;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+.voltar{
+    width: 25px;
+    height: 25px;
+}
+

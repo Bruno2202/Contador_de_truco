@@ -1,0 +1,63 @@
+body {
+    background-color: #000000;
+    background-image: url(Img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Cartos';
+}
+
+/*=======================MAIN=======================*/
+
+.main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*=======================UP=======================*/
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+}
+
+/*=======================MID=======================*/
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.F {
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+.D {
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+.P {
+    margin: 10px;
+    color: white;
+    font-size: 50px;
+}
+
+/*=======================DOWN=======================*/
+
+.down {
+    
+}

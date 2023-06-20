@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Marcar tento</title>
+</head>
+<body>
+    <!--Modal_1-->
+    <div class="modalOverlay" id="modal-Overlay">  
+        <div class="modal" id="modal">
+            <h1>INFORME AS EQUIPES</h1>
+            <div class="modalDown">
+                <input class="input1" type="text" id="text-Eq1" placeholder="Equipe 1">
+                <input class="input2" type="text" id="text-Eq2" placeholder="Equipe 2">
+                <button class="save" onclick="saveAndCloseEq()">Salvar e Fechar</button> 
+            </div>
+        </div>
+    </div>
+
+    <!--Modal_2-->
+    <div class="modalOverlay2" id="modal-Overlay2">
+        <div class="modal2">
+            <h1>FIM DE JOGO</h1>
+            <div class="modalDown2">
+                <img id="patos" src="patos/pato1.jpeg">
+                <audio id="sompato">
+                    <source src="sompato.mp3" type="audio/mpeg">
+                </audio>
+                <button class="restart" id="restart" onclick="restart()">Nova Partida</button>
+                <button class="changeTeams" onclick="changeTeams()">Trocar Equipes</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal_3 (Ajuste de pontos das partidas)-->
+
+    <div class="modalOverlay3" id="modal-Overlay3">
+        <div class="modal3">
+            <div class="modalTop3">
+                <h1>Ajuste de Pontos</h1>
+            </div>
+            <div class="modalMid3">
+                <div class="equipe1Modal3">
+                    <h3>Equipe 1</h3>
+                    <button onclick="addPoint1()" class="pontos" type="text">+1</button>
+                    <button onclick="decrasePoint1()" class="pontos" type="text">-1</button>
+                </div>
+                <div class="equipe2Modal3">
+                    <h3>Equipe 2</h3>
+                    <button onclick="addPoint2()" class="pontos" type="text">+1</button>
+                    <button onclick="decrasePoint2()" class="pontos" type="text">-1</button>
+                </div>
+            </div>
+            <div class="modalDown3">
+                <button onclick="closeModal3()" class="backConfig">Voltar</button>
+                <button onclick="reset()" class="reset" >Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal_4 (Reset)-->
+    <div class="modalOverlay4" id="modal-Overlay4">
+        <div class="modal4">
+            <h1>ATENÇÃO</h1>
+            <h3> <strong>Você está prestes a resetar os pontos das esquipes. </strong><br><br><br>
+                Você tem certeza?</h3>
+            <div class="modalDown4">
+                <button onclick="agree()" class="agree">Sim</button>
+                <button onclick="desagree()" class="desagree">Não</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Contador-->
+    <div class="main">
+        <h1>MARCADOR DE TENTO</h1>
+        <div class="up">
+
+            <!--Equipe 1-->
+            <div class="container">
+                <div class="equipe1" id="equipe1"></div>
+                <h3 id="points1"></h3>
+                <h2 id="score"></h2>
+                <button class="increment" onclick="increment()">+</button><button class="decrement" onclick="decrement()">-</button>
+                <button id="truco1" class="truco" onclick="truco1()">TRUCO</button>
+            </div>
+
+            <!--Equipe 2-->
+            <div class="container2">
+                <div class="equipe2" id="equipe2"></div>
+                <h3 id="points2"></h3>
+                <h2 id="score2"></h2>
+                <button class="increment2" onclick="increment2()">+</button><button class="decrement2" onclick="decrement2()">-</button>
+                <button id="truco2" class="truco2" onclick="truco2()">TRUCO</button>
+            </div>
+        </div>
+
+        <!--Botões Inferiores-->
+        <div class="down">
+            <button class="open" onclick="openModal()">Equipes</button>
+            <div class="subdown">
+                <a onclick="openModal3()"><img class="config" src="css/config.png"></a>
+                <a href="fdp.html">F.D.P</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/firebase.js" type="module"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/fimdejogo.js"></script>
+
+</body>
+</html>

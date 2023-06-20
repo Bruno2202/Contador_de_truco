@@ -1,0 +1,716 @@
+body {
+    background-color: #000000;
+    background-image: url(Img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Cartos';
+}
+
+/*=======================MODAL 1=======================*/
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.modal {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0px 0px 30px -12px #310000;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.modal > h1 {
+    font-family: 'Cartos';
+    margin: none;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.modalDown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input1 {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Cartos';
+}
+
+.input2 {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Cartos';
+}
+
+.save {
+    padding: 8px;
+    width: 50%;
+    margin: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #550e1b;
+    border-color: #722F37 ;
+    color: rgb(255, 255, 255);
+    font-family: 'Cartos';
+}
+
+/*=======================MODAL 2=======================*/
+
+.modalOverlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0px 0px 30px -12px #310000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.modal2 > h1 {
+    font-family: 'Cartos';
+    margin: none;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.modalDown2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.restart {
+    margin-top: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+#patos {
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: none;
+}
+
+.changeTeams {
+    margin-top: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+/*=======================MODAL 3=======================*/
+.modalOverlay3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0px 0px 30px -12px #310000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.modalTop3 > h1 {
+    font-family: 'Cartos';
+    margin: none;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.modalMid3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipe1Modal3 > h3 {
+    font-family: 'Cartos';
+}
+
+.equipe2Modal3 > h3 {
+    font-family: 'Cartos';
+}
+
+.equipe1Modal3 {
+    margin-right: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipe2Modal3 {
+    margin-left: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalDown3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: auto;
+}
+
+.backConfig {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 5px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.reset {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 5px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.pontos {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 5px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.config {
+    width: 70px;
+}
+
+/*=======================MODAL 4=======================*/
+
+.modalOverlay4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(151, 26, 26);
+    box-shadow: 0px 0px 30px -12px #310000;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.modal4 > h1 {
+    font-family: 'Lexend';
+}
+
+.modal4 > h3 {
+    font-family: 'Lexend';
+}
+
+.modalDown4 {
+    display: flex;
+}
+
+.agree {
+    margin-top: 20px;
+    margin-left: 20px; 
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #181818;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-color: #000000;
+    padding: 5px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.desagree {
+    margin-top: 20px;
+    margin-left: 20px; 
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #181818;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-color: #000000;
+    padding: 5px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+/*=======================FUNCIONALIDADE DO TRUCO=======================*/
+
+.main > h1 {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-family: 'Cartos';
+    text-align: center;
+}
+
+.close {
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #550e1b;
+    border-color: #722F37 ;
+    color: rgb(255, 255, 255);
+    font-family: 'Cartos';
+}
+
+body > h1 {
+    margin-top: 60px;
+    font-family: 'Cartos';
+}
+
+
+.truco {
+    font-family: 'Cartos';
+    height: 30px;
+    width: 120px;
+    margin-top: 50px;
+    margin-left: 125px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #722F37 ;
+}
+
+.truco2{
+    font-family: 'Cartos';
+    height: 30px;
+    width: 120px;
+    margin-top: 50px;
+    margin-left: 125px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #722F37 ;
+}
+
+.up{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.container {
+    height: 180px;
+    width: 500px;
+    border: 3px solid #790505;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #722F37;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#000000;
+    color: white;
+}
+
+.container2 {
+    height: 180px;
+    width: 500px;
+    border: 3px solid #790505;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #722F37;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px#000000;
+}
+
+.container > h2 {
+    font-family: 'Arial';   
+}
+
+.container2 > h2 {
+    font-family: 'Arial';
+}
+
+.equipe1 {
+    text-align: center;
+    font-family: 'Cartos';
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 5px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/*=======================PONTOS DAS EQUIPES=======================*/
+h3 {
+    color: white;
+    font-family: Arial;
+}
+/*================================================================*/
+
+.equipe2 {
+    text-align: center;
+    font-family: 'Cartos';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 5px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.score {
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: 5px;
+    margin: auto;
+    font-family: Arial;
+    margin-top: 50px;
+}
+
+h2 {
+    text-shadow: 0px 0px 10px rgb(218, 218, 218);
+    font-size: 60px;
+    font-family: 'Cartos';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 250px;
+    height: 5px;
+    margin: auto;
+    font-family: Arial;
+    margin-top: 50px;
+}
+
+.score2 {
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: 5px;
+    margin: auto;
+    font-family: Arial;
+    margin-top: 50px;
+}
+
+.increment {
+    font-family: 'Cartos';
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #550e1b;
+    border-color: #722F37 ;
+    color: white;
+    font-size: large;
+    padding: 20px;
+}
+
+.increment2 {
+    font-family: 'Cartos';
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #550e1b;
+    border-color: #722F37 ;
+    color: white;
+    font-size: large;
+    padding: 20px;
+}
+
+.decrement {
+    font-family: 'Cartos';
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #550e1b;
+    border-color: #722F37 ;
+    color: white;
+    font-size: large;
+    padding: 20px;
+}
+
+.decrement2 {
+    font-family: 'Cartos';
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #550e1b;
+    border-color: #722F37 ;
+    color: white;
+    font-size: large;
+    padding: 20px;
+}
+
+.voltar {
+    width: 25px;
+    height: 25px;
+}
+
+
+.down{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.down > button {
+    margin: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.subdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@font-face{
+    font-family: 'Cartos';
+    src: url(Cartos.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Lexend';
+    src: url(Lexend-ExtraLight.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url(Img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .h2 {
+        font-size: 60px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 40vw;
+        height: auto;
+    }
+
+    .equipe1{
+        margin: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    #score{
+        margin: 20px;
+        height: auto;
+        width: auto;
+    }
+
+    .increment{
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .decrement{
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container2{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 40vw;
+        height:auto;
+    }
+    
+    .equipe2{
+        margin: 10px;
+        width: auto;
+        height: auto;
+    }
+    
+    #score2{
+        margin: 20px;
+        height: auto;
+        width: auto;
+    }
+
+    .increment2{
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .decrement2{
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .truco {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .truco2 {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
