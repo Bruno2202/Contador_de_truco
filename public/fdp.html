@@ -11,30 +11,26 @@
     <div class="main">
         <div class="top">
             <div class="title">
-                <h1>Contador de FPD</h1>
+                <h1>Contador de FDP</h1>
             </div>
         </div>
         <div class="mid">
-            <div class="F">
-                <h1>F</h1>
-            </div>
-            <div class="D">
-                <h1>D</h1>
-            </div>
-            <div class="P">
-                <h1>P</h1>
-            </div>
+            <button class="F">F</button>
+            <button class="D">D</button>
+            <button class="P">P</button>
         </div>
-        <div class="donw">
+        <div class="down">
             <div class="faco">
                 <h2>FAÇO:</h2>
-                <button class="buttonDown" id="button-AddFaco" onclick="addFaco">+1</button>
-                <button class="buttonDown" id="button-ReduceFaco" onclick="reduceFaco">-1</button>
+                <h3 id="pt-Faco"></h3>
+                <button class="buttonDown" id="button-AddFaco" onclick="addFaco()">+1</button>
+                <button class="buttonDown" id="button-ReduceFaco" onclick="reduceFaco()">-1</button>
             </div>
             <div class="fiz">
                 <h2>FIZ:</h2>
-                <button class="buttonDown" id="button-AddFiz" onclick="addFiz">+1</button>
-                <button class="buttonDown" id="button-ReduceFiz" onclick="reduceFiz">-1</button>
+                <h3 id="pt-Fiz"></h3>
+                <button class="buttonDown" id="button-AddFiz" onclick="addFiz()">+1</button>
+                <button class="buttonDown" id="button-ReduceFiz" onclick="reduceFiz()">-1</button>
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-position: center center;
     font-family: 'Cartos';
+    height: 100vh;
 }
 
 /*=======================MAIN=======================*/
@@ -24,10 +25,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 20vh;
 }
 
 .title {
     color: white;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 /*=======================MID=======================*/
@@ -36,28 +39,124 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50vh;
 }
+
+/*======F======*/
 
 .F {
+    font-family: 'Cartos';
+    border: none;
+    background-color: #00000000;
     margin: 10px;
-    color: white;
-    font-size: 50px;
+    color: #ffffff48;
+    font-size: 120px;
+    transition: 0.5s;
 }
+
+.F:hover {
+    text-shadow: 0px 0px 10px white;
+    color: white;
+}
+
+.F:active {
+    color: #550e1b;
+}
+
+/*======D======*/
 
 .D {
+    font-family: 'Cartos';
+    border: none;
+    background-color: #00000000;
     margin: 10px;
-    color: white;
-    font-size: 50px;
+    color: #ffffff48;
+    font-size: 120px;
+    transition: 0.5s;
 }
 
-.P {
-    margin: 10px;
+.D:hover {
+    text-shadow: 0px 0px 10px white;
     color: white;
-    font-size: 50px;
+}
+
+.D:active {
+    color: #550e1b;
+}
+
+/*======P======*/
+
+.P {
+    font-family: 'Cartos';
+    border: none;
+    background-color: #00000000;
+    margin: 10px;
+    color: #ffffff48;
+    font-size: 120px;
+    transition: 0.5s;
+}
+
+.P:hover {
+    text-shadow: 0px 0px 10px white;
+    color: white;
+}
+
+.P:active {
+    color: #550e1b;
 }
 
 /*=======================DOWN=======================*/
 
 .down {
-    
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    height: auto;
+}
+
+.faco {
+    text-shadow: 2px 2px 4px rgba(160, 160, 160, 0.5);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faco > h2 {
+    text-align: center;
+    color: white;
+}
+
+.fiz {
+    text-shadow: 2px 2px 4px rgba(160, 160, 160, 0.5);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fiz > h2 {
+    text-align: center;
+    color: white;
+}
+
+.buttonDown {
+    margin: 10px;
+    font-family: 'Cartos';
+    border-radius: 7px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    border-color: #270209;
+    padding: 10px 50px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+/*=======================FONTES=======================*/
+
+@font-face{
+    font-family: 'Cartos';
+    src: url(Cartos.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }
