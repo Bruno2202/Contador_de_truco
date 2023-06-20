@@ -1,0 +1,22 @@
+================= COMO USAR O GITBASH =================
+
+1°: Criar um novo terminal no VisualCode e dar os seguintes comandos:
+
+git init  //Inicializar o Git
+git status  //Verificar se há algum arquivo novo para ser upado para o git
+git commit -m "nome do commit"  //Utilizado para "Printar" o projeto e enviar ao Git
+git branch -M main  //Se caso já estver utilizando a "main", não precisa mudar
+git remote add origin (Url do projeto no GitHub)
+git push -u origin main  //Upar projeto no GitHub
+
+2°: Remover url remota:
+
+git init
+git remote -v  //Mostrar qual Url está sendo utilizada no projeto
+git remote remove origin  //Remove a Url antiga
+git remoto add origin (Url do projeto no Github)
+*/
+Sempre verificar após a adição da nova URl se foi adicionada corretamente 
+(git remote -v)
+*/
+
