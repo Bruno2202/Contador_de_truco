@@ -111,6 +111,13 @@ function desagree() {
     document.getElementById('modal-Overlay4').style.display = 'none';
 }
 
+
+//FDP
+function FDP() {
+    window.location.href = "fdp.html"
+}
+
+
 //VAR
 var eles = 0;
 document.getElementById("score2").innerText=eles;

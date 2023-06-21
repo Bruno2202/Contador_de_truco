@@ -11,6 +11,99 @@ body {
     height: 100vh;
 }
 
+/*=======================MODAL=======================*/
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0px 0px 30px -12px #310000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.modal > h1 {
+    font-family: 'Cartos';
+    margin: none;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.modalDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.restart {
+    margin-top: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+#patos {
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: none;
+}
+
+.changeTeams {
+    margin-top: 20px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: white;
+    font-size: large;
+    border-color: #270209;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+/*=======================BACK=======================*/
+
+.back {
+    position:absolute;
+    margin: 10px;
+}
+
+.back > button {
+    background-color: #550e1b;
+    color: white;
+    border-color: #270209;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-family: 'Cartos';
+}
+
 /*=======================MAIN=======================*/
 
 .main {
@@ -39,7 +132,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 40vh;
 }
 
 /*======F======*/
@@ -55,7 +148,7 @@ body {
 }
 
 .F:hover {
-    text-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 10px #ffffff;
     color: white;
 }
 
@@ -111,7 +204,7 @@ body {
     display: flex;
     align-items: top;
     justify-content: center;
-    height: auto;
+    height: 20vh;
 }
 
 .faco {
@@ -127,6 +220,11 @@ body {
     color: white;
 }
 
+.faco > h1 {
+    text-align: center;
+    color: white;
+}
+
 .fiz {
     text-shadow: 2px 2px 4px rgba(160, 160, 160, 0.5);
     width: 50vw;
@@ -136,6 +234,11 @@ body {
 }
 
 .fiz > h2 {
+    text-align: center;
+    color: white;
+}
+
+.fiz > h1 {
     text-align: center;
     color: white;
 }

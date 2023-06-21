@@ -8,6 +8,25 @@
 </head>
 <body>
     
+    <!--Modal_1-->
+    <div class="modalOverlay" id="modal-Overlay">
+        <div class="modal">
+            <h1>FIM DE JOGO</h1>
+            <div class="modalDown">
+                <img id="patos" src="patos/pato1.jpeg">
+                <audio id="sompato">
+                    <source src="sompato.mp3" type="audio/mpeg">
+                </audio>
+                <button class="restart" id="restart" onclick="restart()">Nova Partida</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Contador_FDP-->
+    <div class="back">
+        <button onclick="back()">←</button>
+    </div>
+
     <div class="main">
         <div class="top">
             <div class="title">
@@ -15,20 +34,20 @@
             </div>
         </div>
         <div class="mid">
-            <button class="F">F</button>
-            <button class="D">D</button>
-            <button class="P">P</button>
+            <button class="F" id="F" onclick="stayF()">F</button>
+            <button class="D" id="D" onclick="stayD()">D</button>
+            <button class="P" id="P" onclick="stayP()">P</button>
         </div>
         <div class="down">
             <div class="faco">
                 <h2>FAÇO:</h2>
-                <h3 id="pt-Faco"></h3>
+                <h1 id="pt-Faco"></h1>
                 <button class="buttonDown" id="button-AddFaco" onclick="addFaco()">+1</button>
                 <button class="buttonDown" id="button-ReduceFaco" onclick="reduceFaco()">-1</button>
             </div>
             <div class="fiz">
                 <h2>FIZ:</h2>
-                <h3 id="pt-Fiz"></h3>
+                <h1 id="pt-Fiz"></h1>
                 <button class="buttonDown" id="button-AddFiz" onclick="addFiz()">+1</button>
                 <button class="buttonDown" id="button-ReduceFiz" onclick="reduceFiz()">-1</button>
             </div>
@@ -36,5 +55,7 @@
     </div>
 
     <script src="scripts/fdp.js"></script>
+    <script src="scripts/fpd2.js"></script>
+    <script src="scripts/fimdejogo.js"></script>
 </body>
 </html>
