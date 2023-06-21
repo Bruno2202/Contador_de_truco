@@ -259,7 +259,7 @@ body {
 
 @font-face{
     font-family: 'Cartos';
-    src: url(Cartos.ttf) format(truetype);
+    src: url(fonts/Cartos.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }

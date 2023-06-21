@@ -620,14 +620,14 @@ h2 {
 
 @font-face{
     font-family: 'Cartos';
-    src: url(Cartos.ttf) format(truetype);
+    src: url(fonts/Cartos.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Lexend';
-    src: url(Lexend-ExtraLight.ttf) format(truetype);
+    src: url(fonts/Lexend-ExtraLight.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
