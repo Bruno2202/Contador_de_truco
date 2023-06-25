@@ -1,0 +1,21 @@
+- Alterado o visual do "CONTADOR DE TRUCO" 
+
+<br><br>
+
+- Pequenas correções de bugs visuais 
+
+<br><br>
+
+- Adicionado as "Configurações de Pontos" 
+
+<br><br>
+
+- Projeto disponível no "GitHub" para todos 
+
+<br><br>
+
+- Adiconado o novo modo de jogo "FDP" 
+
+<br><br>
+
+- Adicionado as "Notas de atualização" do contador

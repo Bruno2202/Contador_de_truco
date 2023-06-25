@@ -51,7 +51,7 @@ function saveAndCloseEq() {
 
 
 
-//MODAL FIM DE JOGO
+//MODAL 2 - MODAL FIM DE JOGO
 function openModal2() {
     document.getElementById('modal-Overlay2').style.display = 'flex';
 }
@@ -64,7 +64,7 @@ function restart() {
 }
 
 
-//AJUSTE DE PONTOS DAS PARTIDAS
+//MODAL 3 - AJUSTE DE PONTOS DAS PARTIDAS
 function openModal3() {
     document.getElementById('modal-Overlay3').style.display = 'flex';
 }
@@ -99,7 +99,7 @@ function reset() {
     document.getElementById('modal-Overlay4').style.display = 'flex';
 }
 
-//MODAL 4
+//MODAL 4 - CONFIRMAR ALTERAÇÕES NO MODAL 3
 function agree() {
     points1 = 0;
     document.getElementById('points1').innerText = points1;

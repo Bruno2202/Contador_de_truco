@@ -1,16 +1,37 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+import { getFirestore , collection , getDocs } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCdAZCXyB49EuUJqTEwmoRsjmj-piKlyOg",
-    authDomain: "contador-de-truco-lebibe.firebaseapp.com",
-    projectId: "contador-de-truco-lebibe",
-    storageBucket: "contador-de-truco-lebibe.appspot.com",
-    messagingSenderId: "392966204080",
-    appId: "1:392966204080:web:969e6f8cda33dc617b6975",
-    measurementId: "G-WWHYTPVSW4"
+  apiKey: "AIzaSyCdAZCXyB49EuUJqTEwmoRsjmj-piKlyOg",
+  authDomain: "contador-de-truco-lebibe.firebaseapp.com",
+  projectId: "contador-de-truco-lebibe",
+  storageBucket: "contador-de-truco-lebibe.appspot.com",
+  messagingSenderId: "392966204080",
+  appId: "1:392966204080:web:969e6f8cda33dc617b6975",
+  measurementId: "G-WWHYTPVSW4"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const db = getFirestore(app);
+
+getDocs(collection(db, "updates" ))
+    .then(querySnapshot => {
+        const update1 = querySnapshot.docs.reduce((acc, doc) => {
+        acc += `<b>${doc.data().Log}<b>`
+        return acc    
+        }, "")
+
+        const update2 = document.querySelector("[data-js = 'log']")
+        update2.innerHTML = update1
+})
+
+getDocs(collection(db, "updates" ))
+    .then(querySnapshot => {
+        const version1 = querySnapshot.docs.reduce((acc, doc) => {
+        acc += `<b>${doc.data().Version}<b>`
+        return acc    
+        }, "")
+
+        const version2 = document.querySelector("[data-js = 'version']")
+        version2.innerHTML = version1
+})

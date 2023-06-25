@@ -1,6 +1,6 @@
 body {
     background-color: #000000;
-    background-image: url(Img.png);
+    background-image: url(Img/Img.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -347,6 +347,75 @@ body {
     box-shadow: 0px 0px 20px #000000;
 }
 
+/*=======================MODAL 5=======================*/
+
+.modalOverlay5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal5 {
+    font-family: "Lexend";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: rgb(14, 14, 14);
+    box-shadow: 0px 0px 30px -12px #310000;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.modal5 > h1 {
+    color: white;
+}
+
+.modal5 > l {
+    color: white;
+}
+
+.modal5  > button {
+    margin-top: 30px;
+    font-family: 'Cartos';
+    border-radius: 5px;
+    font-size: large;
+    background-color: #550e1b;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-color: #550e1b;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 20px #1d1d1d;
+}
+
+/*======UPDATES======*/
+
+.updates {
+    position:absolute;
+    margin: 0px;
+}
+
+.updates > button {
+    margin-top: 10px;
+    margin-left: 10px; 
+    font-family: 'Cartos';
+    border-radius: 100px;
+    font-size: large;
+    background-color: #550e1b;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-color: #550e1b;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 20px #550e1b;
+}
+
 /*=======================FUNCIONALIDADE DO TRUCO=======================*/
 
 .main > h1 {
@@ -634,7 +703,7 @@ h2 {
 
 @media only screen and (max-width: 600px){
     body{
-        background-image: url(Img2.png);
+        background-image: url(Img/Img2.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -644,6 +713,7 @@ h2 {
     }
 
     .main{
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
