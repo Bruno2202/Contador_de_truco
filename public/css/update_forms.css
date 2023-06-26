@@ -1,0 +1,104 @@
+body {
+    background-color: #000000;
+    background-image: url(Img/Img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Cartos';
+    height: 100vh;
+}
+
+/*=======================MAIN=======================*/
+
+.main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*=======================TOP=======================*/
+
+.top {
+    height: 10vh;
+    text-align: center;
+}
+
+.top > h1 {
+    color: white;
+    font-family: "Lexend"
+}
+
+/*=======================MID=======================*/
+
+.mid {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.version {
+    text-align: center;
+}
+
+.version > h2 {
+    color: white;
+    font-family: "Lexend"
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+.notes > h2 {
+    color: white;
+    font-family: "Lexend"
+}
+
+.inputNota {
+    margin: 10px;
+    font-family: "Lexend";
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+/*=======================DOWN=======================*/
+
+.down {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+}
+
+.confirm {
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 5px;
+    background-color: #550e1b;
+    border-color: #270209;
+    font-family: "Lexend";
+    color: white;
+}
+
+.textArea {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 5px;
+    height: 70px;
+}
+
+/*=======================FONTES=======================*/
+
+@font-face{
+    font-family: 'Lexend';
+    src: url(fonts/Lexend-ExtraLight.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}

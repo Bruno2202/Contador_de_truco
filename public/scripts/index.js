@@ -38,6 +38,9 @@ function saveAndCloseEq() {
     if (nomeEq2 == null || nomeEq2 == "") {
         nomeEq2 = "Eles";
     }
+    if (nomeEq1 == "admin" && nomeEq2 == "admin") {
+        window.location.href = "update_forms.html"
+    }
     console.log("Equipe1: " + nomeEq1);
     console.log("Equipe2: " + nomeEq2);
 
@@ -48,7 +51,6 @@ function saveAndCloseEq() {
     //auxNomeEq1 = nomeEq1;
     //auxNomeEq2 = nomeEq2;
 }
-
 
 
 //MODAL 2 - MODAL FIM DE JOGO

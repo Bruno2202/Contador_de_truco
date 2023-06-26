@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/update_forms.css">
+    <title>Fromulário de Update</title>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <h1>FORMULÁIO DE UPDATE</h1>
+        </div>
+        <div class="mid">
+            <div class="version">
+                <h2>Versão Atual: <v data-js="version"></v></h2>
+                <h2>Versão Pós atualização</h2>
+                <input type="text" class="inputNota" placeholder="Versão" id="new-Version">
+            </div>
+            <div class="notes">
+                <h2>NOTAS DE ATUALIZAÇÃO:</h2>
+                <input class="inputNota" type="text" placeholder="Nota 1" id="nota-1">
+                <input class="inputNota" type="text" placeholder="Nota 2" id="nota-2">
+                <input class="inputNota" type="text" placeholder="Nota 3" id="nota-3">
+                <input class="inputNota" type="text" placeholder="Nota 4" id="nota-4">
+                <input class="inputNota" type="text" placeholder="Nota 5" id="nota-5">
+                <input class="inputNota" type="text" placeholder="Nota 6" id="nota-6">
+            </div>
+        </div>
+        <div class="down">
+            <button class="confirm" onclick="confirm()">Salvar</button>
+            <textarea class="textArea" id="text-Area"></textarea>
+        </div>
+    </div>
+    
+    <script type="module" src="scripts/forms/forms1.js"></script>
+    <script src="scripts/forms/forms2.js"></script>
+    <script type="module" src="scripts/forms/forms3.js"></script>
+</body>
+</html>
