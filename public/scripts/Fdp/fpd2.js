@@ -71,3 +71,10 @@ function restart() {
 function back() {
     window.location.href = "index.html"
 }
+
+function reset() {
+    faco = 0;
+    fiz = 0;
+    document.getElementById('pt-Faco').innerText = faco;
+    document.getElementById('pt-Fiz').innerText = fiz;
+}

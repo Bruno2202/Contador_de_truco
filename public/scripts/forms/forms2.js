@@ -10,7 +10,7 @@ function confirm() {
     var n5 = document.getElementById('nota-5').value;
     var n6 = document.getElementById('nota-6').value; 
     
-    textLog = `- ${n1} <br><br>- ${n2} <br><br>- ${n3} <br><br>- ${n4} <br><br>- ${n5} <br><br>- ${n6} <br><br>`
+    textLog = `${n1} <br><br> ${n2} <br><br> ${n3} <br><br> ${n4} <br><br> ${n5} <br><br> ${n6} <br><br>`
     document.getElementById('text-Area').innerText = textLog; 
     console.log(newVersion);
 }
